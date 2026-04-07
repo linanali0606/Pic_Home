@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NANA旅行地图</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700&family=Noto+Serif+SC:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#" class="logo">
+        <span class="logo-mark" aria-hidden="true"></span>
+        NANA旅行地图
+      </a>
+      <button type="button" class="nav-toggle" aria-label="打开菜单" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav" aria-label="主导航">
+        <a href="#hero">首页</a>
+        <a href="#gallery">旅途美景</a>
+        <a href="#about">旅途随写</a>
+        <a href="#visit">联系我</a>
+      </nav>
+      <a href="#visit" class="header-cta">联系我</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="hero-tag">PHOTO EXHIBITION</p>
+          <h1>
+            <span class="hero-line">旅途碎片</span>
+            <span class="hero-line hero-accent">皆是精彩</span>
+          </h1>
+          <p class="hero-lead">
+            「NANA旅行地图」呈现NANA旅行途中的精彩瞬间。邀请你放慢脚步，欣赏每一处美景。
+          </p>
+          <div class="hero-actions">
+            <a href="#gallery" class="btn btn-primary">旅途美景</a>
+            <a href="#about" class="btn btn-ghost">旅途随写</a>
+          </div>
+          <dl class="hero-stats">
+            <div><dt>时间</dt><dd>2017 — loading...</dd></div>
+            <div><dt>足迹</dt><dd>loading...</dd></div>
+          </dl>
+        </div>
+        <div class="hero-frame" aria-hidden="true">
+          <div class="frame-mat">
+            <div class="frame-opening">
+              <div class="frame-inner"></div>
+            </div>
+            <span class="frame-caption">NANA · 2026</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section categories">
+      <div class="container">
+        <p class="section-eyebrow">ON VIEW</p>
+        <h2 class="section-title">旅途足迹</h2>
+        <div class="category-bar" role="tablist" aria-label="作品系列">
+          <button type="button" class="cat-pill is-active" data-filter="all">全部</button>
+          <button type="button" class="cat-pill" data-filter="landscape">亚洲</button>
+          <button type="button" class="cat-pill" data-filter="portrait">欧洲</button>
+          <button type="button" class="cat-pill" data-filter="street">大洋洲</button>
+          <button type="button" class="cat-pill" data-filter="still">非洲</button>
+          <button type="button" class="cat-pill" data-filter="still">美洲</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="section gallery-section">
+      <div class="container">
+        <p class="section-eyebrow">PICTRUE</p>
+        <h2 class="section-title">精彩瞬间</h2>
+        <p class="section-intro">按地图足迹筛选精彩瞬间，点击图片查看详情。</p>
+        <div class="gallery-grid" id="galleryGrid">
+          <article class="gallery-card" data-category="landscape">
+            <div class="piece-visual v1"></div>
+            <div class="piece-body">
+              <p class="piece-series">亚洲</p>
+              <h3>夜晚的东京塔</h3>
+              <p class="piece-meta">2025 · 日本 · 东京</p>
+            </div>
+          </article>
+          <article class="gallery-card" data-category="portrait">
+            <div class="piece-visual v2"></div>
+            <div class="piece-body">
+              <p class="piece-series">欧洲</p>
+              <h3>跨年的埃菲尔铁塔</h3>
+              <p class="piece-meta">2018 · 法国 · 巴黎</p>
+            </div>
+          </article>
+          <article class="gallery-card" data-category="street">
+            <div class="piece-visual v3"></div>
+            <div class="piece-body">
+              <p class="piece-series">大洋洲</p>
+              <h3>Pukaki湖的奶油蓝色</h3>
+              <p class="piece-meta">2026 · 新西兰 · Pukaki湖</p>
+            </div>
+          </article>
+          <article class="gallery-card" data-category="street">
+            <div class="piece-visual v4"></div>
+            <div class="piece-body">
+              <p class="piece-series">大洋洲</p>
+              <h3>皇后镇俯瞰湖景</h3>
+              <p class="piece-meta">2026 · 新西兰 ·皇后镇</p>
+            </div>
+          </article>
+          <article class="gallery-card" data-category="landscape">
+            <div class="piece-visual v5"></div>
+            <div class="piece-body">
+              <p class="piece-series">亚洲</p>
+              <h3>上海外滩的夜</h3>
+              <p class="piece-meta">2025 · 中国 · 上海</p>
+            </div>
+          </article>
+          <article class="gallery-card" data-category="portrait">
+            <div class="piece-visual v6"></div>
+            <div class="piece-body">
+              <p class="piece-series">欧洲</p>
+              <h3>冰岛的极光之夜</h3>
+              <p class="piece-meta">2017 · 冰岛 · 雷克雅未克</p>
+            </div>
+          </article>
+        </div>
+        <p id="gallery-empty" class="gallery-empty is-hidden" role="status" aria-live="polite">当前分类暂无内容。</p>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="container about-split">
+        <div>
+          <p class="section-eyebrow">ABOUT</p>
+          <h2 class="section-title">关于NANA旅行地图</h2>
+          <p class="section-intro">
+            「NANA旅行地图」是NANA旅行途中的精彩瞬间，包括近年创作中与「旅行」「路途」「记忆」相关的片段，分享给喜欢旅行的小伙伴们。
+          </p>
+        </div>
+        <ul class="about-list">
+          <li>
+            <span class="about-icon">壹</span>
+            <div>
+              <strong>旅行</strong>
+              <span>分享NANA旅行途中的攻略干货。</span>
+            </div>
+          </li>
+          <li>
+            <span class="about-icon">贰</span>
+            <div>
+              <strong>路途</strong>
+              <span>分享NANA旅行途中的精彩瞬间。</span>
+            </div>
+          </li>
+          <li>
+            <span class="about-icon">叁</span>
+            <div>
+              <strong>记忆</strong>
+              <span>分享NANA旅行途中的记忆趣事。</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="visit" class="section visit">
+      <div class="container visit-box">
+        <div>
+          <p class="section-eyebrow">CONTACT</p>
+          <h2 class="section-title">联系我</h2>
+          <p class="section-intro visit-text">
+            欢迎联系我，分享你的旅行故事。
+          </p>
+        </div>
+        <div class="contact-links">
+          <a href="mailto:alwayssmileln@163.com" class="visit-link">alwayssmileln@163.com</a>
+          <form id="message-form" class="contact-form" novalidate>
+            <label class="contact-form-label" for="message-name">称呼</label>
+            <input id="message-name" class="contact-form-input" name="name" type="text" maxlength="40" placeholder="请输入你的称呼" required />
+            <label class="contact-form-label" for="message-content">留言内容</label>
+            <textarea id="message-content" class="contact-form-input contact-form-textarea" name="content" rows="4" maxlength="500" placeholder="请输入留言内容" required></textarea>
+            <button type="submit" class="btn btn-primary contact-form-submit">发送消息</button>
+            <p id="message-status" class="contact-form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> NANA旅行日记</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
